@@ -2,7 +2,7 @@
 @section('content')
     <h1>Crear  un Posteo</h1>
 
-
+    <div class="row">
         {!! Form::open(['method'=>'POST','action'=>'AdminPostsController@store','files'=>true])  !!}
         {{csrf_field()}}
 
@@ -35,6 +35,9 @@
 
         {!! Form::close() !!}
 
+    </div>
 
-
+    <div class="row">
+    @include('includes.form_error')
+    </div>
 @stop
