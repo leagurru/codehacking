@@ -4,7 +4,6 @@
     <list default="true" id="dfe2bbf4-37d8-4611-b036-b5e763993cdb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/posts/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/posts/create.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="AdminPostsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="57" selection-end-column="39" />
               <folding>
                 <element signature="e#40#81#0#PHP" expanded="true" />
               </folding>
@@ -41,8 +40,8 @@
       <file leaf-file-name="PostsCreateRequest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/PostsCreateRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+            <state relative-caret-position="500">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="29" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -107,8 +106,8 @@
         <option value="$PROJECT_DIR$/app/Role.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/users/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/posts/create.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/PostsCreateRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/PostsCreateRequest.php" />
       </list>
     </option>
   </component>
@@ -562,7 +561,7 @@
       <workItem from="1533301202489" duration="3459000" />
       <workItem from="1533383583578" duration="5181000" />
       <workItem from="1533392506600" duration="36347000" />
-      <workItem from="1533580158800" duration="13594000" />
+      <workItem from="1533580158800" duration="14460000" />
     </task>
     <task id="LOCAL-00001" summary="previo a middleware">
       <created>1533576646076</created>
@@ -606,15 +605,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533679336464</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Clase 229">
+      <created>1533679921955</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533679921955</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58581000" />
+    <option name="totallyTimeSpent" value="59447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25725028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1035,16 +1040,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/PostsCreateRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        <state relative-caret-position="500">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="29" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminPostsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="57" selection-end-column="39" />
           <folding>
             <element signature="e#40#81#0#PHP" expanded="true" />
           </folding>
