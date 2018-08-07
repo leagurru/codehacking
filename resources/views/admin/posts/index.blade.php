@@ -5,9 +5,9 @@
     <table class="table">
         <thead>
           <tr>
-                <th>Id Post</th>
-                <th>Id Usuario</th>
-                <th>Id Categ</th>
+                <th>Post</th>
+                <th>Usuario</th>
+                <th>Category</th>
                 <th>Id Photo</th>
                 <th>Título</th>
                 <th>Cuerpo</th>
@@ -22,7 +22,7 @@
 
               <tr>
                   <td>{{$post->id}}</td>
-                  <td>{{$post->user_id}}</td>
+                  <td>{{$post->user->name}}</td>
                   <td>{{$post->category_id}}</td>
                   <td>{{$post->photo_id}}</td>
                   <td>{{$post->title}}</td>
