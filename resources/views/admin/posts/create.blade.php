@@ -38,6 +38,6 @@
     </div>
 
     <div class="row">
-    @include('includes.form_error')
+        @include('includes.form_error')
     </div>
 @stop
