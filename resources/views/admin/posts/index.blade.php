@@ -30,7 +30,7 @@
                   {{--<td>{{$post->category_id}}</td>--}}
                   <td>{{$post->category ? $post->category->name : "Sin categoría"}}</td>
                   <td>{{$post->title}}</td>
-                  <td>{{$post->body}}</td>
+                  <td>{{str_limit($post->body,10)}}</td>
                   <td>{{$post->created_at->diffForHumans()}}</td>
                   <td>{{$post->updated_at}}</td>
               </tr>
