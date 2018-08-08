@@ -1,5 +1,4 @@
-#git 2
-#git1
+#git home
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
