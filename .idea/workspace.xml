@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfe2bbf4-37d8-4611-b036-b5e763993cdb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-    </list>
+    <list default="true" id="dfe2bbf4-37d8-4611-b036-b5e763993cdb" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -532,7 +529,7 @@
       <workItem from="1533383583578" duration="5181000" />
       <workItem from="1533392506600" duration="36347000" />
       <workItem from="1533580158800" duration="15807000" />
-      <workItem from="1533731459777" duration="1135000" />
+      <workItem from="1533731459777" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="previo a middleware">
       <created>1533576646076</created>
@@ -597,11 +594,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533691984566</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Clase 232, modifico readme para testear git">
+      <created>1533732888400</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1533732888400</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61929000" />
+    <option name="totallyTimeSpent" value="62315000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -660,7 +664,8 @@
     <MESSAGE value="Clase 229" />
     <MESSAGE value="Clase 230 y 231" />
     <MESSAGE value="Clase 232" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clase 232" />
+    <MESSAGE value="Clase 232, modifico readme para testear git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clase 232, modifico readme para testear git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
