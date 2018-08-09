@@ -176,7 +176,7 @@
                             </li>
 
                             <li>
-                                <a href="{{route('admin.categories.upload')}}">Upload Media</a>
+                                <a href="{{route('admin.media.upload')}}">Upload Media</a>
                             </li>
 
                         </ul>
