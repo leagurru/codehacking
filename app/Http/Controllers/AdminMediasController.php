@@ -31,16 +31,11 @@ class AdminMediasController extends Controller
     }
 
     public function destroy($id){
-
         $photo = Photo::findOrFail($id);
         unlink( public_path() . $photo->file );
         $foto_nombre = $photo->file ;
         $photo->delete();
         Session::flash('deleted_foto','Se ha borrado la foto: ' . $foto_nombre );
         return redirect('/admin/media');
-
-
-
-
     }
 }
