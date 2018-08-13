@@ -31,6 +31,10 @@
                   <td>{{$post->category ? $post->category->name : "Sin categoría"}}</td>
                   <td>{{$post->title}}</td>
                   <td>{{str_limit($post->body,10)}}</td>
+
+                  <td><a href="{{route('home.post', $post->id)}}">Ver Posteo</a></td>
+                  <td><a href="{{route('admin.comments.show', $post->id)}}">Ver Comments</a></td>
+
                   <td>{{$post->created_at->diffForHumans()}}</td>
                   <td>{{$post->updated_at}}</td>
               </tr>
