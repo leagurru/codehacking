@@ -11,6 +11,8 @@
                 <th>Category</th>
                 <th>Título</th>
                 <th>Cuerpo</th>
+                <th></th>
+                <th></th>
                 <th>Creado</th>
                 <th>Actualizado</th>
           </tr>
