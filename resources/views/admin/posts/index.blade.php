@@ -11,8 +11,8 @@
                 <th>Category</th>
                 <th>Título</th>
                 <th>Cuerpo</th>
-                <th></th>
-                <th></th>
+                <th>Posteos Links</th>
+                <th>Comment Links</th>
                 <th>Creado</th>
                 <th>Actualizado</th>
           </tr>
