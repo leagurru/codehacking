@@ -110,6 +110,8 @@
 
                         <div class="form-group">
 
+                            <input type="hidden" name="comment_id" value="{{$comment->id}}">
+
                         {!! Form::label('body','Body:') !!}
                         {!! Form::textarea('body',null,['class'=>'form-control','rows'=>1]) !!}
                         </div>
