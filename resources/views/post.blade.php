@@ -113,7 +113,7 @@
 
                                     <button class="toggle-reply btn btn-primary pull-right">Responder</button>
 
-                                    <div class="comment-reply">
+                                    <div class="comment-reply col-sm-6">
 
 
                                         {!! Form::open(['method'=>'POST','action'=>'CommentRepliesController@createReply'])  !!}
@@ -124,7 +124,7 @@
                                                 <input type="hidden" name="comment_id" value="{{$comment->id}}">
 
                                             {!! Form::label('body','Body:') !!}
-                                            {!! Form::textarea('body',null,['class'=>'form-control','rows'=>1]) !!}
+                                            {!! Form::textarea('body',null,['class'=>'form-control ','rows'=>1]) !!}
                                             </div>
 
                                             <div class="form-group">
