@@ -70,7 +70,7 @@
                     <td>
 
 
-                        {!! Form::open(['method'=>'DELETE', 'action'=> ['PostCommentsController@destroy', $reply->id]]) !!}
+                        {!! Form::open(['method'=>'DELETE', 'action'=> ['CommentRepliesController@destroy', $reply->id]]) !!}
 
 
                         <div class="form-group">
@@ -96,7 +96,7 @@
     @else
 
 
-        <h1 class="text-center">No replies</h1>
+        <h1 class="text-center">No hay respuestas al comentario</h1>
 
 
 
