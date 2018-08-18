@@ -42,4 +42,12 @@ class User extends Authenticatable
     public function posts(){
         return $this->hasMany(('App\Post'));
     }
+
+    // esta convención crea una nueva columna gravatar, que no existe en el modelo
+    public function getGravatarAttribute(){
+
+        $hash = md5(strtolower(trim( $this->attributes['email']) )) . "?d=mm";
+
+        return "http://www.gravatar.com/avatar/$hash" ;
+    }
 }
