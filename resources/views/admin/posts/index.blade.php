@@ -34,7 +34,7 @@
                   <td>{{$post->title}}</td>
                   <td>{{str_limit($post->body,10)}}</td>
 
-                  <td><a href="{{route('home.post', $post->id)}}">Ver Posteo</a></td>
+                  <td><a href="{{route('home.post', $post->slug)}}">Ver Posteo</a></td>
                   <td><a href="{{route('admin.comments.show', $post->id)}}">Ver Comments</a></td>
 
                   <td>{{$post->created_at->diffForHumans()}}</td>
