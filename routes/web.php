@@ -68,6 +68,7 @@ Route::group(['middleware'=>'admin'], function(){
 
     Route::resource('admin/comments','PostCommentsController',['names'=>[
         'index'  => 'admin.comments.index',
+        'show'  => 'admin.comments.show',
         'create' => 'admin.comments.create',
         'store' => 'admin.comments.store',
         'edit' => 'admin.comments.edit'
@@ -76,10 +77,11 @@ Route::group(['middleware'=>'admin'], function(){
 
 
     Route::resource('admin/comment/replies','CommentRepliesController',['names'=>[
-        'index'  => 'admin.replies.index',
-        'create' => 'admin.replies.create',
-        'store' => 'admin.replies.store',
-        'edit' => 'admin.replies.edit'
+        'index'  => 'admin.comment.replies.index',
+        'show'  => 'admin.comment.replies.show',
+        'create' => 'admin.comment.replies.create',
+        'store' => 'admin.comment.replies.store',
+        'edit' => 'admin.comment.replies.edit'
     ]]);
 
 
