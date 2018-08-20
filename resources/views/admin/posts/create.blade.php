@@ -1,5 +1,8 @@
 @extends('layouts.admin')
 @section('content')
+
+    @include('includes.tinyeditor')
+
     <h1>Crear Posteo</h1>
 
     <div class="row">
