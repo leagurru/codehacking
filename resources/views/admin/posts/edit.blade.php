@@ -1,12 +1,14 @@
 @extends('layouts.admin')
 @section('content')
+
+    @include('includes.tinyeditor')
     <h1>Editar Posteo</h1>
 
 
     <div class="row">
 
             <div class="col-sm-3">
-                <img src="{{$post->photo->file}}" alt="" class="img-responsive">
+                <img src="{{$post->photo ? $post->photo->file : $post->photoPlaceHolder()}}" alt="" class="img-responsive">
             </div>
 
             <div class="col-sm-9">
