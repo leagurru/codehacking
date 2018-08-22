@@ -10,6 +10,10 @@
     @if($photos)
 
         <form action="/delete/media" method="post" class="form-inline">
+
+            {{csrf_field()}}
+            {{method_field('delete')}}
+
             <div class="form-group">
                 <select name="checkBoxArray" class="form-control">
                     <option value="delete">Borrar</option>
