@@ -47,9 +47,9 @@
                                 <td>
                                         <input type="hidden" name="photo" value="{{$photo->id}}">
 
-                                        <div class="form-group">
-                                            <input type="submit" name="delete_single" value="Borrar" class="btn btn-danger">
-                                        </div>
+                                        {{--<div class="form-group">--}}
+                                            {{--<input type="submit" name="delete_single" value="Borrar" class="btn btn-danger">--}}
+                                        {{--</div>--}}
                                 </td>
                             </tr>
 
