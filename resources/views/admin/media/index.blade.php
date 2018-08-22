@@ -9,18 +9,18 @@
 
     @if($photos)
 
-        <form action="/delete/media" method="post" class="form-inline">
+        <form action="delete/media" method="post" class="form-inline">
 
             {{csrf_field()}}
             {{method_field('delete')}}
 
             <div class="form-group">
                 <select name="checkBoxArray" class="form-control">
-                    <option value="delete">Borrar</option>
+                    <option value="">Borrar</option>
                 </select>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn-primary">
+                <input type="submit" name="delete_all" class="btn-primary">
             </div>
 
 
@@ -37,23 +37,23 @@
                     </thead>
 
                     <tbody>
-                    @foreach($photos as $photo)
-                        <tr>
-                            <td><input class="checkBoxes" type="checkbox" name="checkBoxArray[]" value="{{$photo->id}}"></td>
-                            <td>{{$photo->id}}</td>
-                            <td><img height="50" src="{{$photo->file}}" alt=""></td>
-                            <td>{{$photo->created_at ? $photo->created_at : 'Sin fecha'}}</td>
+                        @foreach($photos as $photo)
+                            <tr>
+                                <td><input class="checkBoxes" type="checkbox" name="checkBoxArray[]" value="{{$photo->id}}"></td>
+                                <td>{{$photo->id}}</td>
+                                <td><img height="50" src="{{$photo->file}}" alt=""></td>
+                                <td>{{$photo->created_at ? $photo->created_at : 'Sin fecha'}}</td>
 
-                            <td>
-                                {!! Form::open(['method'=>'DELETE','action'=>['AdminMediasController@destroy',$photo->id]])  !!}
-                                    <div class="form-group">
-                                        {!! Form::submit('Borrar',['class'=>'btn btn-danger']) !!}
-                                    </div>
-                                {!! Form::close() !!}
-                            </td>
-                        </tr>
+                                <td>
+                                        <input type="hidden" name="photo" value="{{$photo->id}}">
 
-                    @endforeach
+                                        <div class="form-group">
+                                            <input type="submit" name="delete_single" value="Borrar" class="btn btn-danger">
+                                        </div>
+                                </td>
+                            </tr>
+
+                        @endforeach
                     </tbody>
 
                 </table>
