@@ -38,4 +38,8 @@ class AdminMediasController extends Controller
         Session::flash('deleted_foto','Se ha borrado la foto: ' . $foto_nombre );
         return redirect('/admin/media');
     }
+
+    public function deleteMedia(Request $request){
+        return dd($request);
+    }
 }
