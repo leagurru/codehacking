@@ -24,6 +24,8 @@ class DatabaseSeeder extends Seeder
         DB::table('comments')->truncate();
         DB::table('comment_replies')->truncate();
 
+        $this->call(UsersTableSeeder::class);
+
         // relación user y posts
         factory(App\User::class, 10)->create()->each(function($user){
             $user->posts()->save(factory(App\Post::class)->make());
