@@ -7,10 +7,9 @@
           <tr>
                 <th>Post</th>
                 <th>Imagen</th>
+                <th>Título</th>
                 <th>Usuario</th>
                 <th>Category</th>
-                <th>Título</th>
-                <th>Cuerpo</th>
                 <th>Posteos Links</th>
                 <th>Comment Links</th>
                 <th>Creado</th>
@@ -25,15 +24,9 @@
               <tr>
                   <td>{{$post->id}}</td>
                   <td><img height="50" src="{{$post->photo ? $post->photo->file : 'http://placeholder.it/400x400'}}" alt=""</td>
-
-                  {{--<td>{{$post->user->name}}</td>--}}
-                  <td><a href="{{route('admin.posts.edit', $post->slug)}}">{{$post->user->name}}</a></td>
-
-                  {{--<td>{{$post->category_id}}</td>--}}
+                  <td<a href="{{route('admin.posts.edit', $post->slug)}}">>{{$post->title}}</a></td>
+                  <td>{{$post->user->name}}</td>
                   <td>{{$post->category ? $post->category->name : "Sin categoría"}}</td>
-                  <td>{{$post->title}}</td>
-                  <td>{{str_limit($post->body,10)}}</td>
-
                   <td><a href="{{route('home.post', $post->slug)}}">Ver Posteo</a></td>
                   <td><a href="{{route('admin.comments.show', $post->id)}}">Ver Comments</a></td>
 
