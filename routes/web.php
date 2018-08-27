@@ -14,9 +14,7 @@ Auth::routes();
 
 Route::get('/logout', 'Auth\LoginController@logout');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::auth();
 
@@ -26,9 +24,7 @@ Route::get('/home', 'HomeController@index');
 
 Route::group(['middleware'=>'admin'], function(){
 
-    Route::get('/admin', function(){
-        return view('admin.index');
-    });
+    Route::get('/admin', 'AdminController@index');
 
     Route::resource('admin/users','AdminUsersController',['names'=>[
         'index'  => 'admin.users.index',
@@ -40,7 +36,6 @@ Route::group(['middleware'=>'admin'], function(){
 
     Route::get('post/{id}', ['as'=>'home.post', 'uses'=> 'AdminPostsController@post']);
 
-
     Route::resource('admin/posts','AdminPostsController',['names'=>[
         'index'  => 'admin.posts.index',
         'create' => 'admin.posts.create',
@@ -49,14 +44,12 @@ Route::group(['middleware'=>'admin'], function(){
 
     ]]);
 
-
     Route::resource('admin/categories','AdminCategoriesController',['names'=>[
         'index'  => 'admin.categories.index',
         'create' => 'admin.categories.create',
         'store' => 'admin.categories.store',
         'edit' => 'admin.categories.edit'
     ]]);
-
 
     Route::resource('admin/media','AdminMediasController',['names'=>[
         'index'  => 'admin.media.index',
@@ -67,7 +60,6 @@ Route::group(['middleware'=>'admin'], function(){
 
     Route::delete('admin/delete/media','AdminMediasController@deleteMedia');
 
-
     Route::resource('admin/comments','PostCommentsController',['names'=>[
         'index'  => 'admin.comments.index',
         'show'  => 'admin.comments.show',
@@ -75,8 +67,6 @@ Route::group(['middleware'=>'admin'], function(){
         'store' => 'admin.comments.store',
         'edit' => 'admin.comments.edit'
     ]]);
-
-
 
     Route::resource('admin/comment/replies','CommentRepliesController',['names'=>[
         'index'  => 'admin.comment.replies.index',
