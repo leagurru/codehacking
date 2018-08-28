@@ -15,7 +15,7 @@
                             <a href="#">{{$post->title}}</a>
                         </h2>
                         <p class="lead">
-                            por <a href="index.php">{{$post->user->name}}</a>
+                            por {{$post->user->name}}
                         </p>
                         <p><span class="glyphicon glyphicon-time"></span> Enviado {{$post->created_at->diffForHumans()}}</p>
                         <hr>

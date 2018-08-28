@@ -16,7 +16,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+//        $this->middleware('auth');
     }
 
     /**
@@ -26,9 +26,10 @@ class HomeController extends Controller
      */
     public function index()
     {
+//        $year = Carbon::now()->year;
         $posts = Post::paginate(2);
         $categories = Category::all();
-        return view('front/home',compact('posts', 'categories'));
+        return view('front/home',compact('posts', 'categories', 'year'));
     }
 
     public function post($slug){

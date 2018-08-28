@@ -15,7 +15,7 @@
 
 <hr>
 
-@include('includes.front_footer')
+{{--@include('includes.front_footer')--}}
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
