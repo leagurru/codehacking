@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Http\Requests;
 use App\Post;
 use Illuminate\Http\Request;
@@ -26,6 +27,14 @@ class HomeController extends Controller
     public function index()
     {
         $posts = Post::paginate(2);
-        return view('front/home',compact('posts'));
+        $categories = Category::all();
+        return view('front/home',compact('posts', 'categories'));
+    }
+
+    public function post($slug){
+        $post = Post::findBySlugOrFail($slug);
+        $comments = $post->comments()->whereIsActive(1)->get();
+        $categories = Category::all();
+        return view('post', compact('post','comments','categories'));
     }
 }
