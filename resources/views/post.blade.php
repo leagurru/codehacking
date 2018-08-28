@@ -12,7 +12,7 @@
 
 <!-- Author -->
 <p class="lead">
-    by <a href="#">{{$post->user->name}}</a>
+    por {{$post->user->name}}
 </p>
 
 <hr>
@@ -33,13 +33,12 @@
 
 <hr>
 
-@if(Session::has('comment_message'))
-    {{session('comment_message')}}
-@endif
+{{--@if(Session::has('comment_message'))--}}
+    {{--{{session('comment_message')}}--}}
+{{--@endif--}}
 
 
-
-<!-- Blog Comments -->
+    <!-- Blog Comments -->
 
 @if(Auth::check())
 
