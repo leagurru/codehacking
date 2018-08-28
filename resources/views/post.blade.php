@@ -112,6 +112,9 @@
 
 
                                         {!! Form::open(['method'=>'POST','action'=>'CommentRepliesController@createReply'])  !!}
+
+                                        {{--{!! Form::open(['method'=>'POST','url'=>'admin/comment/replies'])  !!}--}}
+
                                             {{csrf_field()}}
 
                                             <div class="form-group">

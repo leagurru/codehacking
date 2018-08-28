@@ -76,6 +76,8 @@ Route::group(['middleware'=>'admin'], function(){
         'edit' => 'admin.comment.replies.edit'
     ]]);
 
+    Route::post('admin/comment/replies','CommentRepliesController@createReply');
+
 
     //Route::get('admin/media/upload', ['as'=> 'admin.media.upload', 'uses'=> 'AdminMediasController@store']);
 });
